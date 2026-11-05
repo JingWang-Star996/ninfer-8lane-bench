@@ -1,0 +1,65 @@
+mode=predict lanes=8 seconds=20.0
+completed_requests=181 total_tokens=1230 wall=18.1s
+AGGREGATE=68.0 tok/s
+per_lane: min=6.8 p50=8.3 max=11.3
+---
+mode=predict lanes=2 seconds=50.0
+completed_requests=357 total_tokens=3332 wall=47.8s
+AGGREGATE=69.7 tok/s
+per_lane: min=34.8 p50=35.1 max=35.1
+---
+mode=predict lanes=2 seconds=40.0
+completed_requests=70 total_tokens=6706 wall=39.6s
+AGGREGATE=169.5 tok/s
+per_lane: min=82.5 p50=87.9 max=87.9
+---
+mode=predict lanes=8 seconds=70.0
+completed_requests=244 total_tokens=26330 wall=69.4s
+AGGREGATE=379.3 tok/s
+per_lane: min=43.4 p50=48.5 max=52.5
+---
+mode=predict lanes=8 seconds=80.0
+completed_requests=41 total_tokens=72195 wall=91.8s
+AGGREGATE=786.4 tok/s
+per_lane: min=101.5 p50=104.4 max=107.0
+---
+mode=predict lanes=8 seconds=18.0
+completed_requests=11 total_tokens=17168 wall=23.3s
+AGGREGATE=736.2 tok/s
+per_lane: min=101.6 p50=109.4 max=126.3
+---
+mode=predict lanes=8 seconds=10.0
+completed_requests=8 total_tokens=16302 wall=19.0s
+AGGREGATE=858.5 tok/s
+per_lane: min=107.9 p50=108.5 max=111.1
+---
+mode=predict lanes=8 seconds=10.0
+completed_requests=8 total_tokens=13868 wall=17.1s
+AGGREGATE=810.9 tok/s
+per_lane: min=107.3 p50=120.2 max=124.2
+---
+mode=predict lanes=8 seconds=10.0
+completed_requests=9 total_tokens=15471 wall=18.7s
+AGGREGATE=828.4 tok/s
+per_lane: min=104.3 p50=111.3 max=113.6
+---
+mode=predict lanes=8 seconds=20.0
+completed_requests=20 total_tokens=33735 wall=27.3s
+AGGREGATE=1236.3 tok/s
+per_lane: min=170.6 p50=174.3 max=179.2
+---
+mode=predict lanes=8 seconds=12.0
+completed_requests=9 total_tokens=15501 wall=11.9s
+AGGREGATE=1302.9 tok/s
+per_lane: min=172.1 p50=174.7 max=181.6
+---
+mode=predict lanes=8 seconds=12.0
+completed_requests=13 total_tokens=17577 wall=16.0s
+AGGREGATE=1100.1 tok/s
+per_lane: min=163.3 p50=168.6 max=191.8
+---
+mode=predict lanes=8 seconds=12.0
+completed_requests=11 total_tokens=16095 wall=13.0s
+AGGREGATE=1236.2 tok/s
+per_lane: min=157.4 p50=170.5 max=183.4
+---

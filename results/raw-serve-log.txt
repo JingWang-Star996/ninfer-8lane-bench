@@ -1,0 +1,51 @@
+# ninfer-serve 吞吐采样原文
+# source: D:\ninfer\serve.log
+# 提取时间: 2026-11-05
+
+## [1] 全局峰值 1508.0 tok/s / draft=15 / 8 路
+
+[2026-11-05 14:22:43.298] [info] ninfer-serve: throughput interval=5.008s prefill=0.0tok/s decode=1508.0tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+
+## [2] draft=15 期间 8 路连续采样
+
+[2026-11-05 14:21:58.210] [info] ninfer-serve: throughput interval=5.010s prefill=92.6tok/s decode=957.5tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=6.76
+[2026-11-05 14:22:03.218] [info] ninfer-serve: throughput interval=5.008s prefill=34.7tok/s decode=1380.0tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.89
+[2026-11-05 14:22:08.230] [info] ninfer-serve: throughput interval=5.013s prefill=57.9tok/s decode=1302.1tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.79
+[2026-11-05 14:22:13.236] [info] ninfer-serve: throughput interval=5.005s prefill=46.3tok/s decode=1368.1tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.84
+[2026-11-05 14:22:38.290] [info] ninfer-serve: throughput interval=5.003s prefill=104.3tok/s decode=460.0tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=5.73
+[2026-11-05 14:22:43.298] [info] ninfer-serve: throughput interval=5.008s prefill=0.0tok/s decode=1508.0tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+[2026-11-05 14:22:53.319] [info] ninfer-serve: throughput interval=5.012s prefill=104.1tok/s decode=973.4tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=6.33
+[2026-11-05 14:22:58.327] [info] ninfer-serve: throughput interval=5.008s prefill=46.3tok/s decode=1338.8tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.85
+[2026-11-05 14:23:08.340] [info] ninfer-serve: throughput interval=5.011s prefill=102.8tok/s decode=314.1tok/s running=8 prefilling=1 decode_ready=7 waiting=0 avg_decode_batch=1.59
+[2026-11-05 14:23:13.350] [info] ninfer-serve: throughput interval=5.010s prefill=13.0tok/s decode=1417.7tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.95
+
+## [3] 请求完成行：每轮 15.98 token（acceptance 99.9%）
+
+[2026-11-05 14:23:18.559] [info] ninfer-serve: [req 43] done finish=output_limit prompt=58 gen=2048 cache=0 reuse=full_reset ttft=97ms prefill=596.6tok/s decode=183.1tok/s wall=12.27s speculative=mtp 15.87tok/round (99.4%)
+[2026-11-05 14:23:19.320] [info] ninfer-serve: [req 48] done finish=output_limit prompt=58 gen=2048 cache=0 reuse=full_reset ttft=1016ms prefill=593.9tok/s decode=179.4tok/s wall=13.03s speculative=mtp 15.87tok/round (99.4%)
+[2026-11-05 14:23:19.400] [info] ninfer-serve: [req 52] done finish=stop_token prompt=58 gen=1808 cache=0 reuse=full_reset ttft=267ms prefill=585.0tok/s decode=180.6tok/s wall=10.38s speculative=mtp 15.99tok/round (99.9%)
+[2026-11-05 14:23:19.637] [info] ninfer-serve: [req 47] done finish=output_limit prompt=58 gen=2048 cache=0 reuse=full_reset ttft=1554ms prefill=587.2tok/s decode=179.7tok/s wall=13.35s speculative=mtp 15.87tok/round (99.4%)
+[2026-11-05 14:23:19.836] [info] ninfer-serve: [req 51] done finish=output_limit prompt=58 gen=2048 cache=0 reuse=full_reset ttft=1492ms prefill=584.8tok/s decode=182.3tok/s wall=12.93s speculative=mtp 15.99tok/round (99.9%)
+[2026-11-05 14:23:20.917] [info] ninfer-serve: [req 53] done finish=stop_token prompt=58 gen=1072 cache=0 reuse=full_reset ttft=246ms prefill=595.8tok/s decode=206.1tok/s wall=5.45s speculative=mtp 15.75tok/round (98.3%)
+
+## [4] 对比组：draft=8 峰值 891.4 tok/s（同一台机器，同一天）
+
+[2026-11-05 13:43:19.879] [info] ninfer-serve: throughput interval=5.008s prefill=0.0tok/s decode=891.4tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+
+## [5] 对比组：draft=8 的 8 路采样
+
+[2026-11-05 13:42:59.846] [info] ninfer-serve: throughput interval=5.010s prefill=82.4tok/s decode=727.9tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.03
+[2026-11-05 13:43:14.871] [info] ninfer-serve: throughput interval=5.015s prefill=104.1tok/s decode=542.0tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=4.81
+[2026-11-05 13:43:19.879] [info] ninfer-serve: throughput interval=5.008s prefill=0.0tok/s decode=891.4tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+[2026-11-05 13:43:24.894] [info] ninfer-serve: throughput interval=5.015s prefill=0.0tok/s decode=875.8tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+
+## [6] 对比组：draft=6（2026-09-21，当时的 784.5 记录）
+
+[2026-09-21 23:48:02.244] [info] ninfer-serve: throughput interval=5.004s prefill=31.6tok/s decode=403.9tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=7.87
+[2026-09-21 23:48:07.259] [info] ninfer-serve: throughput interval=5.015s prefill=0.0tok/s decode=537.2tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+[2026-09-21 23:48:12.268] [info] ninfer-serve: throughput interval=5.009s prefill=0.0tok/s decode=685.0tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+[2026-09-21 23:48:17.282] [info] ninfer-serve: throughput interval=5.014s prefill=0.0tok/s decode=784.5tok/s running=8 prefilling=0 decode_ready=8 waiting=0 avg_decode_batch=8.00
+
+## [7] 采样分布统计（draft=15 期间所有 8 路样本）
+
+# n=10  min=314.1  p50=1302.1  p90=1417.7  max=1508.0
