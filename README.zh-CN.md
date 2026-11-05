@@ -1,6 +1,6 @@
 # 1508 tok/s on a single RTX 5090 Laptop — Qwen3.8-27B NVFP4, 8 concurrent lanes
 
-[English](README.md) | **简体中文**
+[English](README.md) | **简体中文** | [日本語](README.ja.md)
 
 > 单张 RTX 5090 **Laptop**（24 GB）跑 27B 模型，8 路并发聚合 **1508 tok/s**。  
 > 本文只讨论**极限脉冲场景**，日常吞吐数据同时给出，请勿混淆口径。

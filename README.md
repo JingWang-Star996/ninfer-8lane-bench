@@ -1,6 +1,6 @@
 # 1508 tok/s on a single RTX 5090 Laptop — Qwen3.8-27B NVFP4, 8 concurrent lanes
 
-**English** | [简体中文](README.zh-CN.md)
+**English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
 > A single RTX 5090 **Laptop** (24 GB) running a 27B model, 8 concurrent lanes, **1508 tok/s** aggregate.
 > Everything here is about the **burst peak** scenario. Daily-throughput numbers are reported separately — do not mix them.
